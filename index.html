@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veilux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+   <header class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Veilux Logo" class="logo-img">
+            </a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a> 
+            <a href="all-products.html">All Products</a>
+            <a href="women.html">Women</a>
+            <a href="men.html">Men</a>
+            <a href="accessories.html">Accessories</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="#" class="cart">Cart (<span id="cartCount">0</span>)</a>
+
+            <a href="#" class="login">Log In</a>
+
+            <button class="hamburger-menu" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <img src="images/hero.avif" alt="Hero Background" class="hero-bg-img">
+
+        <div class="hero-content">
+            <h1 class="hero-title">Style, Redefined</h1>
+            <p class="hero-subtitle">
+                Uncomplicated, essential pieces<br>
+                you'll reach for again and again
+            </p>
+            <button class="btn-shop" id="shopBtn">Shop All</button>
+        </div>
+
+        <div class="sale-card">
+            <div class="sale-img-wrapper">
+                <img src="bag.jpg" alt="Mid-season sale item">
+            </div>
+            <div class="sale-text">
+                <span>The mid-season sale is on!</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المجموعات -->
+    <section class="collections-section">
+        <div class="collections-header">
+            <h2 class="collections-title">The Collections</h2>
+            <p class="collections-subtitle">
+                Explore our latest arrivals in men<br>
+                woman and accessories.
+            </p>
+        </div>
+
+        <div class="collections-grid">
+            <div class="collection-card">
+                <img src="images/img8.avif" alt="Men Collection" class="collection-img">
+                <a href="men.html" class="collection-link">Shop Men</a>
+            </div>
+
+            <div class="collection-card">
+                <img src="images/img6.avif" alt="Accessories Collection" class="collection-img">
+                <a href="accessories.html" class="collection-link">Shop Accessories</a>
+            </div>
+
+            <div class="collection-card">
+                <img src="images/img7.avif" alt="Women Collection" class="collection-img">
+                <a href="women.html" class="collection-link">Shop Women</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تسوق المظهر -->
+    <section class="shop-look-section">
+        <div class="shop-look-container">
+            <div class="look-main-card">
+                <img src="images/img10.avif" alt="Shop the Look" class="look-main-img">
+                <h2 class="look-title">Shop the Look</h2>
+            </div>
+
+            <div class="look-products-grid">
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product1.avif" alt="Tailored Straight-Leg Trousers">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-title">Tailored Straight-Leg Trousers</span>
+                        <span class="product-price">$178.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/img5.avif" alt="Classic Cotton Baby Tee">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-title">Classic Cotton Baby Tee</span>
+                        <span class="product-price">$38.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/img4.avif" alt="Classic Trench Coat">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-title">Classic Trench Coat</span>
+                        <span class="product-price">$290.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/img6.avif" alt="Ribbed Wool Socks">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-title">Ribbed Wool Socks</span>
+                        <span class="product-price">$20.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Veilux Logo" class="footer-logo-img">
+                    </a>
+                    <p class="footer-tagline">Timeless elegance for the modern aesthetic.</p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <span class="newsletter-title">Subscribe to our newsletter</span>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Veilux. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Pinterest</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

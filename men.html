@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Veilux Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="all-products.html">All Products</a>
+                <a href="women.html">Women</a>
+                <a href="men.html" class="active">Men</a>
+                <a href="accessories.html">Accessories</a>
+            </nav>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" class="cart">Cart (<span id="cartCount">0</span>)</a>
+
+            <a href="#" class="login">Log In</a>
+
+            <button class="hamburger-menu" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header> 
+
+    <main class="products-page-container">
+
+        <div class="products-header">
+            <h1 class="products-title">Men</h1>
+            <p class="products-description">This is your category description. It's a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</p>
+        </div>
+
+        <div class="products-layout">
+            
+            <aside class="sidebar">
+                <span class="sidebar-title">Browse by</span>
+                <ul class="sidebar-menu">
+                    <li><a href="all-products.html">All Products</a></li>
+                    <li><a href="men.html" class="active">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </aside>
+
+            <section class="products-content">
+                <div class="products-toolbar">
+                    <span class="product-count">4 products</span>
+                    <div class="sort-by">Sort by: Recommended <span>▼</span></div>
+                </div>
+
+                <div class="grid-4-products">
+                    
+                    <div class="grid-product-card">
+                        <div class="grid-product-img">
+                            <img src="images/product1.avif" alt="Relaxed Straight-Leg Trousers">
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="grid-product-info">
+                            <span class="p-name">Relaxed Straight-Leg Trousers</span>
+                            <span class="p-price">$178.00</span>
+                        </div>
+                    </div>
+
+                    <div class="grid-product-card">
+                        <div class="grid-product-img">
+                            <img src="images/product4.avif" alt="Classic Cotton Baby Tee">
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="grid-product-info">
+                            <span class="p-name">Classic Cotton Baby Tee</span>
+                            <span class="p-price">$38.00</span>
+                        </div>
+                    </div>
+
+                    <div class="grid-product-card">
+                        <div class="grid-product-img">
+                            <img src="images/product6.avif" alt="Classic Trench Coat">
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="grid-product-info">
+                            <span class="p-name">Classic Trench Coat</span>
+                            <span class="p-price">$290.00</span>
+                        </div>
+                    </div>
+
+                    <div class="grid-product-card">
+                        <div class="grid-product-img">
+                            <img src="images/men.avif" alt="One-Shoulder Black Dress">
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="grid-product-info">
+                            <span class="p-name">One-Shoulder Black Dress</span>
+                            <span class="p-price">$150.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
